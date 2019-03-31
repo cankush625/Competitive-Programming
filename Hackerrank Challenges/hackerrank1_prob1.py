@@ -23,3 +23,17 @@ for a[i] in a :
     pair = b // 2
     print("There are {0} pairs of {1} are formed".format(pair, a[i]))
     i = i + 1
+
+
+'''Actual solution for the challenge'''
+
+# from collections import Counter
+#
+# n = int(input())
+# c = Counter(map(int, input().split()))
+# ans = 0
+#
+# for x in c:
+#     ans += c[x] // 2
+#
+# print(ans)

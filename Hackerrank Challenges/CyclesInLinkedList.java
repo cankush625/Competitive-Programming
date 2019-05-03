@@ -1,21 +1,20 @@
 //Detect a cycle in the linked list. Note that the head pointer may be 'null' if the list is empty.
 
 package LinkedList;
-import java.util.Scanner;
 
 public class CyclesInLinkedList {
-    private static Scanner scanner = new Scanner(System.in);
+
     static class node{
         int data;
         node next;
         node prev;
 
-        public node(int data){
+        private node(int data){
             this.data = data;
         }
     }
 
-    static boolean hasCycles(node head){
+    private static boolean hasCycles(node head){
         if (head == null){
             return false;
         }

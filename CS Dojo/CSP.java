@@ -1,3 +1,5 @@
+//Detect closest pair whose summation is equal to or nearest to the target value
+
 import java.util.Arrays;
 
 public class CSP {

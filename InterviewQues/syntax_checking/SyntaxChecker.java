@@ -34,6 +34,8 @@ public class SyntaxChecker {
 					stack.pop();
 				}
 			}
+		} else {
+			return false;
 		}
 		
 		return stack.empty();

@@ -12,16 +12,20 @@ class Solution {
         		j++;
         	}
         	
-        	for (int i = 0; i < nums1.length; i++) {
-        		for (int k = 1; j < nums1.length; j++) {
-        			if (nums1[i] > nums1[k]) {
-	        			int temp = nums1[i];
-	        			nums1[i] = nums1[k];
-	        			nums1[k] = temp;
-        			}
-        		}
+        	boolean isSorted = false;
+        	while (!isSorted) {
+        		isSorted = true;
+	        	for (int i = 0; i < nums1.length - 1; i++) {
+	        		int k = i + 1;
+	        			if (nums1[i] > nums1[k]) {
+		        			int temp = nums1[i];
+		        			nums1[i] = nums1[k];
+		        			nums1[k] = temp;
+		        			isSorted = false;
+	        			}
+	        	}
         	}
-        	System.out.println(nums1);
+        	System.out.println(nums1.toString());
         }
     }
 }

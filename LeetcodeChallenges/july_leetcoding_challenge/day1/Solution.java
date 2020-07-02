@@ -4,15 +4,11 @@ public class Solution {
 	public int arrangeCoins(int n) {
         int count = 0;
         int row = 1;
-        if (n <= 0) {
-        	return 0;
-        } else {
-        	while (n - row >= 0) {
-    			n = n - row;
-    			count++;
-    			row++;
-        	}
-        }
+    	while (n - row >= 0) {
+			n = n - row;
+			count++;
+			row++;
+    	}
         return count;
     }
 	

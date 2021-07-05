@@ -10,14 +10,16 @@ class Solution {
         char[] array = new char[n];
         int i = 0;
         int temp = 0;
-        while (k >= 26) {
-            k -= 26;
-            array[i] = (char) 26+96;
+        int reminder = k % 26;
+        int noOfZ = k / 26;
+        while (noOfZ > 0) {
+            array[i] = 'z';
+            noOfZ--;
             temp = i;
             i++;
         }
-        if (k < 26 && k > 0) {
-            int num = k + 96;
+        if (reminder > 0) {
+            int num = reminder + 96;
             array[i] = (char) num;
             temp = i;
             i++;

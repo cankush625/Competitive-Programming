@@ -2,6 +2,7 @@
 // Return the minimum size of the set so that at least half of the integers of the array are removed.
 
 class Solution {
+    // Sorting HashMap in descending order
     private HashMap<Integer, Integer> sortByValue(HashMap<Integer, Integer> numCounts) {
         List<Map.Entry<Integer, Integer> > list = 
             new LinkedList<Map.Entry<Integer, Integer> >(numCounts.entrySet());
@@ -23,6 +24,7 @@ class Solution {
     }
     
     public int minSetSize(int[] arr) {
+	// Store number of occurances of the integer in the HashMap
         HashMap<Integer, Integer> numCounts = new HashMap<Integer, Integer>();
         for (int i = 0; i < arr.length; i++) {
             if (!numCounts.containsKey(arr[i])) {

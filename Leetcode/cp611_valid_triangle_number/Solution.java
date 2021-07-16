@@ -1,6 +1,7 @@
 class Solution {
     // Sort the array in ascending order and start looking for numbers from the last element(largest number) in sorted array 
     // to the first number.
+    // Time complexity O(n^2)
     public int triangleNumber(int[] nums) {
         int answer = 0;
         int first = nums.length - 1;

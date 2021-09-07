@@ -1,4 +1,5 @@
 class Solution {
+    // Time complexity O(n)
     public int firstUniqChar(String s) {
         int[] frequency = new int[26];
         for (int i = 0; i < s.length(); i++) {

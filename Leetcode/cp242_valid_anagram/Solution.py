@@ -1,5 +1,6 @@
 class Solution:
     # Leetcode Problem: https://leetcode.com/problems/valid-anagram/
+    # Time complexity: O(n)
     def isAnagram(self, s: str, t: str) -> bool:
         # Generate the char count map for s
         s_char_count_map = {}

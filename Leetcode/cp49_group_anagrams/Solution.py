@@ -1,6 +1,8 @@
 class Solution:
     # Leetcode Problem: https://leetcode.com/problems/group-anagrams/description/
     # This solution is not optimized and gives TLE for 10% of test cases
+    #
+    # Time complexity: O(n^2)
     def isAnagram(self, s: str, t: str) -> bool:
         # Generate the char count map for s
         s_char_count_map = {}

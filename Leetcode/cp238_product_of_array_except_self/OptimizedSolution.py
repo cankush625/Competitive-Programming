@@ -1,5 +1,10 @@
+import math
+
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    # Leetcode Problem: https://leetcode.com/problems/product-of-array-except-self/
+    #
+    # Time complexity: O(n)
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
         # If the list has more that one zero's then
         # the product at all the places will be zero
         if nums.count(0) > 1:

@@ -15,6 +15,8 @@ class Solution:
             ):
                 word += ch
         print(word)
+        # Instead of taking the reverse, we can use the Two pointer
+        # technique to solve this as well.
         if word == word[::-1]:
             return True
         return False
